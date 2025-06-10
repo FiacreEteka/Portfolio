@@ -1,0 +1,27 @@
+.a-propos {
+    text-align: center;
+}
+
+.content {
+    border-right: 1px solid #8e86b5;
+    border-bottom: 1px solid #8e86b5;
+    padding: 50px;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 80px;
+}
+
+.content h2{
+   margin-top: 20px;
+   margin-bottom: 20px;
+   font-size: 20px;
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+}
+
+.images img {
+    width: 40%;
+}
