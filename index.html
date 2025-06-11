@@ -5,41 +5,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
     <link rel="stylesheet" href="CSS/global.css">
-    <link rel="stylesheet" href="CSS/accueil.css">
     <script src="JS/portfolio.js"></script>
 </head>
 <body>
-    <div class="en-tete">
-        <a href="index.html">Accueil</a>
-        <a href="propos.html">A propos</a>
-        <a href="competence.html">Compétences</a>
-        <a href="projet.html">Projets</a>
-    </div>
-        <section class="accueil-introduction">
+    <header>
+        <nav>
+            <h1>ETEKA <span>FIACRE</span></h1>
             <div>
-            <h1>Fiacre Dev Web</h1>
-            <p>Là où l’apprentissage rencontre la passion. 
-            Développeur web débutant, je me forme avec enthousiasme aux technologies du web pour créer des sites clairs,
-            modernes et fonctionnels. Chaque projet est pour moi une opportunité de progresser et de donner vie à des idées grâce au code.
-            </p>
-            <a href="projet.html" class="cta">VOIR MES PROJETS</a>
+                <a href="">Accueil</a>
+                <a href="#a-propos">À propos</a>
+                <a href="#projets">Projets</a>
+                <a href="#competence">Compétences</a>
+                <a href="#contact">Contact</a>
             </div>
-        
-            <img src="images/fiacre.jpg" alt="PhotoDev">    
+        </nav>
+    </header>
+    <main>
+        <section class="section-introduction">
+            <div>
+                <h1>Je suis <span>Fiacre</span>, Développeur en devenir passionné par le web et le design !</h1>
+                <a href="#projets" class="cta">Voir mes projets</a>
+            </div>
+            <img src="images/dev-web.png" alt="dev-web">
+         
         </section>
-    
-        <section class="accueil-contact">
-            <h3>Contact</h3>
+        <section  id="a-propos" class="section-a-propos">
+            <h2>À propos</h2>
+            <div class="a-propos">
+                    <div>
+                        <p>
+                            Je m'appelle <span class="highligh">ETEKA</span>, passionné par la création de sites web modernes et interactifs.
+                        </p><br>
+                        <p>
+                            Je suis actuellement étudiant en <span class="highligh">développement web</span>, et je cherche à améliorer mes compétences en 
+                            JavaScript, HTML et CSS.
+                        </p><br>
+                        <p>
+                            J'adore transformer mes idées en projets concrets et expérimenter avec les nouvelles technologies.
+                        </p>
+                        <a href="cv/CV_ETEKA_Fiacre.pdf" class="cta" target="_blank">Télécharger mon CV</a>
+                    </div>
+                    <div>
+                           <img src="images/fiacre.jpg" alt="PhotoDev" class="img-circulaire"> 
+                    </div>
+            </div>
+        </section>
+        <section  id="projets" class="section-projets">
+            <h2>Mes Projets</h2>
+             <div class="projets">
+                <div class="projet1">
+                    <p>Page d'une recette de cuisine</p>
+                    <img src="images/recette.jpg" alt="recette" class="image1"><br>
+                    <a href="https://fiacreeteka.github.io/Challenge-Frontend/" target="_blank" class="cta">Voir</a>
+                </div>
+                <div class="projet2">
+                    <p>Page d'abonnement à une newsletter</p>
+                    <img src="images/newsletter.jpg" alt="newsletter" class="image2"><br>
+                    <a href="https://fiacreeteka.github.io/Challenge3/" target="_blank" class="cta">Voir</a>
+                </div>
+                <div class="projet3">
+                    <p>Page d'accueil des actualités</p>
+                    <img src="images/news.jpg" alt="news" class="image3"><br>
+                    <a href="https://fiacreeteka.github.io/Challenge2/" target="_blank" class="cta">Voir</a>
+                </div>
+            </div>
+        </section>
+        <section  id="competence" class="section-competence">
+            <h2>Compétences</h2>
+            <div class="competence">
+                <div class="card">
+                       <h3>Soft Skills</h3>
+                       <div class="skill">
+                            <div class="skill-name">Gestion de projet</div>
+                            <div class="progress-bar"><div class="progress-fill gestion"></div></div>
+                       </div>
+                       <div class="skill">
+                            <div class="skill-name">Résolution de problème</div>
+                            <div class="progress-bar"><div class="progress-fill resolution"></div></div>
+                       </div>
+                        <div class="skill">
+                            <div class="skill-name">Adaptabilité</div>
+                            <div class="progress-bar"><div class="progress-fill adaptabilite"></div></div>
+                        </div>
+                </div>
+                <div class="card">
+                    <h3>Hard Skills</h3>
+                        <div class="skill">
+                            <div class="skill-name">HTML</div>
+                            <div class="progress-bar"><div class="progress-fill html"></div></div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">CSS</div>
+                            <div class="progress-bar"><div class="progress-fill css"></div></div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">JavaScript</div>
+                            <div class="progress-bar"><div class="progress-fill js"></div></div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">VS Code</div>
+                            <div class="progress-bar"><div class="progress-fill vscode"></div></div>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="section-contact">
+            <h1>Vous avez un <span>projet en tête ?</span></h1>
+            <h3>N'hésitez pas à me <span>contacter</span></h3>
+
                 <form action="" class="formulaire">
-                    <input type="text" name="nom" id="nom" placeholder="Nom" class="nom">
-                    <input type="email" name="email" id="email" placeholder="Email" class="email">
-                    <textarea placeholder="Message" name="email" id="email" rows="5" class="message"></textarea>
-                    <input type="button" value="ENVOYER" class="cta btn" onclick="verifier()">
+                    <div class="form-nom">
+                        <div class="form-column">
+                           <label for="Prenom">Votre prénom</label>
+                           <input type="text" name="prenom" id="prenom" placeholder="John" class="prenom">
+                        </div>
+                        <div class="form-column">
+                           <label for="Nom">Votre nom</label>
+                           <input type="text" name="nom" id="nom" placeholder="Durant" class="nom">
+                        </div>
+                    </div>
+                        <label for="sujet">Votre sujet</label>
+                        <input type="text" name="sujet" id="sujet" placeholder="Développement d'un site web" class="sujet">
+                    <textarea name="message" id="message" rows="10" placeholder="Ecrivez votre message ici !" class="message"></textarea>
+                    <input type="button" value="Envoyer" class="cta" onclick="verifier()">
                 </form>
         </section> 
-        <div class="pied-de-page">
-             <p>© 2025 Fiacre Web Dev. Tous droits réservés.</p>
-             <p>Développé avec passion 💻 </p>
-        </div>    
+    </main>
+    <footer>
+        <p>Designed by <span>Fiacre</span> with HTML CSS JS</p>
+        <p>Tous droits réservés - 2025</p>
+    </footer>    
 </body>
 </html>

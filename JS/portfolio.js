@@ -1,16 +1,12 @@
 function verifier() {
     let nom = document.querySelector(".nom").value;
-    let email = document.querySelector(".email").value;
+    let prenom = document.querySelector(".prenom").value;
     let message = document.querySelector(".message").value
+    let sujet = document.querySelector(".sujet").value
     
-    if(nom ==="" || email ==="" || message ===""){
+    if(nom ==="" || message ==="" || prenom ==="" || sujet ==="") {
         alert("Veuilez remplir tous les champs")
     }else {
-        let regex = new RegExp("[a-z0-90-90-9]+@[a-z]+\\.[a-z]+")
-        if(regex.test(email)) {
-            alert("Message envoyé")
-        }else {
-            alert("Email incorrect")
-        }
+        alert("Message envoyé")
     }
 }
