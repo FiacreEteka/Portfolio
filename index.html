@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="CSS/global.css">
     <script src="JS/portfolio.js"></script>
 </head>
@@ -111,9 +111,9 @@
         </section>
         <section id="contact" class="section-contact">
             <h1>Vous avez un <span>projet en tête ?</span></h1>
-            <h3>N'hésitez pas à me <span>contacter</span></h3>
+            <h3>N'hésitez pas à me <span>contacter</span></h3> 
 
-                <form action="" class="formulaire">
+                <form action="https://formsubmit.co/fiacreeteka213@gmail.com" method="post" class="formulaire" novalidate>
                     <div class="form-nom">
                         <div class="form-column">
                            <label for="Prenom">Votre prénom</label>
@@ -127,7 +127,7 @@
                         <label for="sujet">Votre sujet</label>
                         <input type="text" name="sujet" id="sujet" placeholder="Développement d'un site web" class="sujet">
                     <textarea name="message" id="message" rows="10" placeholder="Ecrivez votre message ici !" class="message"></textarea>
-                    <input type="button" value="Envoyer" class="cta" onclick="verifier()">
+                    <input type="submit" value="Envoyer" class="cta" onclick="verifier(event)">
                 </form>
         </section> 
     </main>
